@@ -1,0 +1,113 @@
+#root {
+  margin: 0 auto;
+  /* padding: 1rem; */
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+form{
+  position: relative;
+}
+
+.card {
+  padding: 2em;
+}
+
+ul {
+  width: "1500px";
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+li button {
+  font-size: smaller;
+  background-color: gray;
+  padding: 3px;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+}
+
+input.grow {
+  font-size: larger;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 5px 10px;
+  min-width: 350px;
+}
+
+.fieldset {
+  display: flex;
+}
+
+.fieldset button {
+  border-radius: 0 10px 10px 0;
+  border: 1px solid black;
+}
+
+.error {
+  color: coral;
+  font-size: smaller;
+  position: absolute;
+  bottom: -25px;
+}
+
+section {
+  display: flex;
+  height: 70vh;
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    flex-direction: column;
+  }
+  input.grow {
+    min-width: 300px;
+  }
+}
